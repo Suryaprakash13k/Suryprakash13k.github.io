@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Prakash Kurada - Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        /* Background: Deep Purple & Blue Gradient */
+        body {
+            background: linear-gradient(135deg, #2C003E, #1E3A8A);
+            color: #E0E0E0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            transition: all 0.5s ease;
+        }
+
+        /* Home Page */
+        .home {
+            display: block;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #00FFFF;
+            text-shadow: 2px 2px 15px rgba(0, 255, 255, 0.8);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Profile Section */
+        .profile {
+            display: none;
+            width: 85%;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Buttons */
+        .btn-custom {
+            background: #00FFFF;
+            color: #1E3A8A;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: 0.3s;
+            border: none;
+            box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.5);
+        }
+
+        .btn-custom:hover {
+            background-color: #00BFFF;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.9);
+        }
+
+        /* Card Section */
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            text-align: left;
+            color: #fff;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #00FFFF;
+            border-bottom: 2px solid #00FFFF;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #00FFFF;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Home Page -->
+    <div class="home">
+        <h1 class="welcome-title">Welcome to my profile! I’m Surya Prakash Kurada</h1>
+        <button class="btn btn-custom" onclick="showProfile()">Enter Profile</button>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="profile">
+        <div class="text-center">
+            <h2 class="mb-3">Surya Prakash Kurada</h2>
+            <p>Bachelor's in Electrical and Electronics Engineering</p>
+        </div>
+
+        <div class="card">
+            <h3 class="section-title"><i class="fas fa-user icon"></i> About Me</h3>
+            <p>I am an Electrical and Electronics Engineering student with a strong foundation in power systems, circuit design, and electric vehicle technology. Through hands-on internships and academic projects, I have developed problem-solving skills and technical expertise in electrical wiring, distribution systems, and automation. I am passionate about applying my knowledge to develop efficient and sustainable electrical solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="section-title"><i class="fas fa-graduation-cap icon"></i> Education</h3>
+            <ul>
+                <li>Bachelor's in Electrical and Electronics Engineering (Pursuing)</li>
+                <li>Diploma in Electrical and Electronics Engineering, SMVM Polytechnic (2023) - 82.4%</li>
+                <li>10th Class, G V S R Z P High School (2020)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="section-title"><i class="fas fa-lightbulb icon"></i> Skills</h3>
+            <ul>
+                <li>C Language, Python</li>
+                <li>MS Office, Circuit Designing</li>
+                <li>Electric Wiring, Problem-Solving</li>
+                <li>HTML, CSS, Bootstrap</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="section-title"><i class="fas fa-briefcase icon"></i> Internship</h3>
+            <ul>
+                <li>Intern - APEPDCL 33/11kV Substation (6 months)</li>
+                <li>Intern - Electric Vehicles, SkillDzire (2 months)</li>
+                <li>AI-ML Virtual Internship, India Edu Program (10 weeks)</li>
+                <li>Embedded System Developer Internship, MICROCHIP (10 weeks)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="section-title"><i class="fas fa-envelope icon"></i> Contact</h3>
+            <p>Email: <a href="mailto:surya.kurada@sasi.ac.in" style="color: #00FFFF;">surya.kurada@sasi.ac.in</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/surya-kurada" target="_blank" style="color: #00FFFF;">Surya Kurada</a></p>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-custom mt-3" onclick="goHome()">Back to Home</button>
+        </div>
+    </div>
+
+    <script>
+        function showProfile() {
+            document.querySelector('.home').style.display = 'none';
+            document.querySelector('.profile').style.display = 'block';
+        }
+
+        function goHome() {
+            document.querySelector('.profile').style.display = 'none';
+            document.querySelector('.home').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
